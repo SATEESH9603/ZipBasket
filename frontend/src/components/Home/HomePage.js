@@ -53,8 +53,8 @@ export default function HomePage({ user }) {
           </div>
         </div>
       </section>
-
-      {/* Featured Deals Section */}
+      {/*
+      {/* Featured Deals Section 
       <section className="featured">
         <h3>Featured Deals</h3>
         <div className="product-grid">
@@ -80,7 +80,7 @@ export default function HomePage({ user }) {
           </div>
         </div>
       </section>
-
+      */}
       {/* Amazon-like Footer */}
       <footer className="homepage-footer">
         <div className="footer-sections">
