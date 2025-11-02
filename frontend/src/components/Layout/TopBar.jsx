@@ -6,7 +6,7 @@ export default function TopBar({ user, onLogout }) {
   return (
     <div className="global-top-line">
       <div className="topbar-content">
-        <h2 className="app-title">QuizMaster</h2>
+        <h2 className="app-title">ZipBasket</h2>
         <nav>
           {user ? (
             <>
