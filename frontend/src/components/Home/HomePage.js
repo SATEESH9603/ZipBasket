@@ -35,10 +35,10 @@ export default function HomePage({ user }) {
       <section className="categories">
         <h3>Shop by Category</h3>
         <div className="category-grid">
-          <div className="category-card">
+          <Link to="/category/ELECTRONICS" className="category-card">
             <img className="category-img" src={electronicsImg} alt="Electronics" />
             <p>Electronics</p>
-          </div>
+          </Link>
           <div className="category-card">
             <img className="category-img" src={fashionImg} alt="Fashion" />
             <p>Fashion</p>

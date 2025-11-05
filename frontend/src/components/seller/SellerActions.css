@@ -1,0 +1,76 @@
+/* Namespaced to avoid collisions with your existing CSS */
+.sdx-menu-wrap { position: relative; display: inline-block; }
+
+.sdx-menu {
+  position: absolute;
+  top: 48px;
+  left: 0;
+  background: #fff;
+  border: 1px solid #f0c0c8;
+  border-radius: 12px;
+  padding: 0.4rem;
+  display: grid;
+  gap: 0.25rem;
+  z-index: 40;
+  min-width: 200px;
+  box-shadow: 0 16px 32px rgba(74, 144, 226, 0.12);
+}
+
+.sdx-item {
+  text-align: left;
+  background: #fff;
+  color: #7b1e36;
+  border: none;
+  padding: 0.55rem 0.7rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.sdx-item:hover { background: #ffebee; }
+/* Container */
+.sdx-menu-wrap {
+  position: relative;
+  display: inline-block;
+  /* let the trigger button (which already has .cta from your dashboard CSS) shine */
+}
+
+/* Dropdown panel */
+.sdx-menu {
+  position: absolute;
+  top: 48px;
+  left: 0;
+  background: #fff;
+  border: 1px solid #f0c0c8;            /* matches card border tone */
+  border-radius: 12px;
+  padding: 0.4rem;
+  display: grid;
+  gap: 0.35rem;
+  z-index: 40;
+  min-width: 220px;
+  box-shadow: 0 16px 32px rgba(74,144,226,0.12); /* same family as cards */
+}
+
+/* Items – style to look like your .tiny/.ghost blend */
+.sdx-item {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  width: 100%;
+  text-align: left;
+
+  background: #fff;
+  color: #7b1e36;
+  border: 1px solid #f4b8b8;           /* matches .cta.ghost border */
+  padding: .55rem .8rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;                     /* bold like dashboard CTAs */
+  transition: background .2s ease, transform .2s ease, box-shadow .2s ease;
+}
+
+.sdx-item:hover {
+  background: #ffd6d6;                  /* same hover tint used elsewhere */
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(185,28,28,0.15);
+}

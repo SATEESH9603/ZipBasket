@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { register, login } from '../services/api';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import './AuthForm.css';
 
 export default function AuthForm({ mode = "login", onAuth }) {
@@ -16,6 +16,54 @@ export default function AuthForm({ mode = "login", onAuth }) {
   });
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
+
+  // ==== helpers: role -> route ====
+  const pickRole = (user) =>
+    (user?.role ?? (Array.isArray(user?.roles) ? user.roles[0] : 'USER'))
+      ?.toString()
+      ?.toUpperCase() || 'USER';
+
+  const routeForRole = (role) => {
+    const map = {
+      ADMIN:  '/admin-dashboard',
+      SELLER: '/seller-dashboard',
+      USER:   '/user-dashboard',
+    };
+    return map[role] || '/user-dashboard';
+  };
+
+  const goToRoleHome = (token, user) => {
+    // persist + notify app
+    try {
+      localStorage.setItem('auth_token', token);
+      localStorage.setItem('auth_user', JSON.stringify(user));
+    } catch {}
+    onAuth?.(token, user);
+
+    // route by role
+    const to = routeForRole(pickRole(user));
+    navigate(to, { replace: true, state: { token, user } });
+  };
+
+  // ==== auto-restore session (only when on auth pages) ====
+  useEffect(() => {
+    const onAuthPage = ['/', '/login', '/register'].includes(location.pathname);
+    if (!onAuthPage) return;
+
+    const t = localStorage.getItem('auth_token');
+    const u = localStorage.getItem('auth_user');
+    if (t && u) {
+      try {
+        const parsed = JSON.parse(u);
+        goToRoleHome(t, parsed);
+      } catch {
+        localStorage.removeItem('auth_token');
+        localStorage.removeItem('auth_user');
+      }
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [location.pathname]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -33,8 +81,8 @@ export default function AuthForm({ mode = "login", onAuth }) {
       if (isLogin) {
         const { data } = await login({ username: form.username, password: form.password });
         if (data.token && data.user) {
-          onAuth(data.token, data.user);
-          navigate('/dashboard');
+          // >>> enhanced: persist + route by role
+          goToRoleHome(data.token, data.user);
         } else {
           alert(data.error?.message || 'Login failed');
         }

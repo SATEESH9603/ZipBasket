@@ -45,6 +45,17 @@ export const resetPassword = async (token, data, type = 'JWT') => {
   return res.data;
 };
 
+// ---- Products ----
+export const getProducts = async ({ page = 1, category, q } = {}) => {
+  // Compose query params (add others later if needed)
+  const params = new URLSearchParams();
+  params.set("page", page);
+  if (category) params.set("category", category); // if backend supports it
+  if (q) params.set("q", q);
+
+  const res = await API.get(`/products?${params.toString()}`);
+  return res.data; // expected shape: { success, products, page, totalPages, totalItems, ... }
+};
 
 // Submit quiz API call
 export const submitQuiz = (answers, token) =>
@@ -53,3 +64,29 @@ export const submitQuiz = (answers, token) =>
   });
 
 export default API;
+
+// ---------------- SELLER API ----------------
+
+// Fetch seller's products
+export const getSellerProducts = (token) =>
+  API.get("/products", {
+    headers: { Authorization: `Bearer ${token}` },
+  });
+
+// Fetch seller's orders
+export const getSellerOrders = (token) =>
+  API.get("/products", {
+    headers: { Authorization: `Bearer ${token}` },
+  });
+
+// Fetch seller's dashboard stats
+export const getSellerStats = (token) =>
+  API.get("/products", {
+    headers: { Authorization: `Bearer ${token}` },
+  });
+
+// Create a new product
+export const createProduct = (payload, token) =>
+  API.post("/products", payload, {
+    headers: { Authorization: `Bearer ${token}` },
+  });

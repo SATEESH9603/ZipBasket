@@ -8,6 +8,9 @@ import ForgotPassword from "./components/Password Reset/ForgotPassword";
 import ResetPassword from "./components/Password Reset/ResetPassword";
 import HomePage from "./components/Home/HomePage";
 import { updateProfile } from "./services/api";
+import CategoryPage from "./pages/CategoryPage";
+import SellerRoute from "./utils/SellerRoute";
+
 
 function App() {
   const [token, setToken] = useState(null);
@@ -21,6 +24,8 @@ function App() {
   const handleLogout = () => {
     setToken(null);
     setUser(null);
+    localStorage.removeItem('auth_token');   // ⬅️ required
+    localStorage.removeItem('auth_user');    // ⬅️ required
   };
 
   const handleUpdateProfile = async (formData) => {
@@ -52,11 +57,29 @@ function App() {
                   path="dashboard"
                   element={token ? <UserDashboard user={user} onLogout={handleLogout} /> : <Navigate to="/login" />}
                 />
+                {/* NEW: role-specific destinations used by AuthForm */}
+                <Route
+                  path="/user-dashboard"
+                  element={token ? <UserDashboard user={user} onLogout={handleLogout} /> : <Navigate to="/login" replace />}
+                />
+                <Route
+                  path="/seller-dashboard"
+                  element={
+                    token ? (
+                      <SellerRoute user={user} token={token} />
+                      // or simply: <SellerRoute />  (it will read from localStorage)
+                    ) : (
+                      <Navigate to="/login" replace />
+                    )
+                  }
+                />
                 <Route path="/profile" element={
                   token ? <ProfileView user={user} token={token} onUpdateProfile={handleUpdateProfile} handleLogout={handleLogout} /> : <Navigate to="/login" />
                 } />
                 <Route path="/forgot-password" element={<ForgotPassword />} />
                 <Route path="/reset-password/:token?" element={<ResetPassword />} />
+                <Route path="/category/:categoryName" element={<CategoryPage />} />
+                
                 <Route path="*" element={<Navigate to="/" />} />
               </Routes>
             </>
