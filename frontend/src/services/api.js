@@ -90,3 +90,17 @@ export const createProduct = (payload, token) =>
   API.post("/products", payload, {
     headers: { Authorization: `Bearer ${token}` },
   });
+
+// Fetch product by ID using query param
+export const getProductById = (id, token) =>
+  API.get(`/products/getProduct`, {
+    params: { productId: id },
+    headers: { Authorization: `Bearer ${token}` },
+  });
+
+// Update product by ID using query param
+export const updateProduct = (id, data, token) =>
+  API.patch(`/products/updateProduct`, data, {
+    params: { productId: id },
+    headers: { Authorization: `Bearer ${token}` },
+  });

@@ -10,7 +10,8 @@ import HomePage from "./components/Home/HomePage";
 import { updateProfile } from "./services/api";
 import CategoryPage from "./pages/CategoryPage";
 import SellerRoute from "./utils/SellerRoute";
-
+import ViewProductRoute from "./utils/ViewProductRoute";
+import EditProductRoute from "./utils/EditProductRoute";
 
 function App() {
   const [token, setToken] = useState(null);
@@ -79,7 +80,8 @@ function App() {
                 <Route path="/forgot-password" element={<ForgotPassword />} />
                 <Route path="/reset-password/:token?" element={<ResetPassword />} />
                 <Route path="/category/:categoryName" element={<CategoryPage />} />
-                
+                <Route path="/seller/product/:productId" element={<ViewProductRoute />} />
+                <Route path="/seller/edit-product/:productId" element={<EditProductRoute token={token} />} />
                 <Route path="*" element={<Navigate to="/" />} />
               </Routes>
             </>

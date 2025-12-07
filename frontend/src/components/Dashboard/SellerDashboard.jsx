@@ -1,8 +1,8 @@
-import React, { useMemo, useState, useEffect } from "react";
+// SellerDashboard.jsx
+import React, { useMemo, useState, useEffect, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import "./SellerDashboard.css";
 
-// child components
 import SellerHeader from "../seller/SellerHeader";
 import SellerKPIs from "../seller/SellerKPIs";
 import SellerActions from "../seller/SellerActions";
@@ -11,12 +11,11 @@ import OrdersCard from "../seller/OrdersCard";
 import PayoutCard from "../seller/PayoutCard";
 import InventoryAlertsCard from "../seller/InventoryAlertsCard";
 import QuickAddModal from "../seller/QuickAddModal";
+import * as api from "../../services/api";
 
 export default function SellerDashboard({
   user,
   token,
-
-  // Stats (optional)
   stats = {
     products: 0,
     lowStock: 0,
@@ -27,99 +26,177 @@ export default function SellerDashboard({
     balance: 0,
     nextPayoutDate: null,
   },
-
-  // Data (optional)
   products = [],
   orders = [],
-
-  // Handlers (optional)
-  onAddProduct,               // (payload) => Promise|void
-  onEditProduct,              // (item) => void
-  onViewProduct,              // (productId) => void
-  onToggleListing,            // (item) => void
-  onExportProducts,           // () => void
-  onExportOrders,             // () => void
-  onFulfillOrder,             // (order) => void
-  onViewOrder,                // (orderId) => void
-  onPayoutRequest,            // () => void
+  onAddProduct,       // optional passthrough
+  onEditProduct,      // optional passthrough
+  onViewProduct,
+  onToggleListing,
+  onExportProducts,
+  onExportOrders,
+  onFulfillOrder,
+  onViewOrder,
+  onPayoutRequest,
 }) {
   const navigate = useNavigate();
 
-  const kpis = useMemo(() => ([
-    { label: "Products", value: stats.products || 0 },
-    { label: "Low Stock", value: stats.lowStock || 0 },
-    { label: "New Orders", value: stats.ordersNew || 0 },
-    { label: "Processing", value: stats.ordersProcessing || 0 },
-    { label: "Revenue (7d)", value: `₹${Number(stats.revenue7d || 0).toLocaleString()}` },
-    { label: "Views (7d)", value: Number(stats.views7d || 0).toLocaleString() },
-  ]), [stats]);
+  const [localProducts, setLocalProducts] = useState(products);
+  useEffect(() => { setLocalProducts(products); }, [products]);
 
-  // ——— Quick Add state (lifted so other parts can react if needed) ———
-  const [showQuickAdd, setShowQuickAdd] = useState(false);
-  const [draftProduct, setDraftProduct] = useState(null);
+  // modal state
+  const [showAdd, setShowAdd] = useState(false);
+  const [modalMode, setModalMode] = useState("create"); // "create" | "edit"
+  const [editingProduct, setEditingProduct] = useState(null);
 
-  // open/close modal
-  const openQuickAdd = () => setShowQuickAdd(true);
-  const closeQuickAdd = () => setShowQuickAdd(false);
+  // CREATE (existing behavior kept; only runs if parent didn't override)
+  const handleCreateProduct = useCallback(
+    async (payload) => {
+      if (onAddProduct) {
+        await onAddProduct(payload);
+      } else {
+        const res = await api.createProduct(payload, token);
+        const created = res?.product || res?.data?.product || res;
+        if (created) {
+          setLocalProducts((prev) => [created, ...(Array.isArray(prev) ? prev : [])]);
+        }
+      }
+      setShowAdd(false);
+    },
+    [onAddProduct, token]
+  );
 
-  // submit handler for modal (pass-through to onAddProduct or route)
-  const handleQuickAddSubmit = async (payload) => {
-    if (onAddProduct) {
-      await onAddProduct(payload);
-    } else {
-      navigate("/seller/products/new", { state: { token, draft: payload } });
-    }
-  };
+  // EDIT: If parent provided handler, use it. Otherwise open modal in "edit" mode.
+  const handleEditRequest = useCallback(
+    (p) => {
+      if (onEditProduct) {
+        onEditProduct(p); // preserve external behavior
+        return;
+      }
+      setEditingProduct(p);
+      setModalMode("edit");
+      setShowAdd(true);
+    },
+    [onEditProduct]
+  );
+
+  // Unified submit for modal (create or update)
+  const handleSubmitModal = useCallback(
+    async (formValues) => {
+      if (modalMode === "create") {
+        await handleCreateProduct(formValues);
+      } else {
+        // UPDATE path (only used when parent didn't provide onEditProduct)
+        const id = editingProduct?.productId ?? editingProduct?.id;
+        const payload = {
+          // send only the limited/allowed fields you want to update
+          price: formValues.price,
+          quantity: formValues.quantity,
+          images: formValues.images,
+          active: formValues.active,
+          description: formValues.description,
+        };
+
+        const res = await api.updateProduct(id, payload, token);
+        const updated = res?.data?.product ?? res?.product ?? null;
+
+        if (updated) {
+          setLocalProducts((prev) =>
+            (Array.isArray(prev) ? prev : []).map((x) =>
+              (x.id ?? x.productId) === (updated.id ?? updated.productId) ? updated : x
+            )
+          );
+        }
+        setShowAdd(false);
+        setModalMode("create");
+        setEditingProduct(null);
+      }
+    },
+    [modalMode, editingProduct, token, handleCreateProduct]
+  );
+
+  const kpis = useMemo(
+    () => [
+      { label: "Products", value: Array.isArray(localProducts) ? localProducts : (stats.products || 0) },
+      { label: "Low Stock", value: stats.lowStock || 0 },
+      { label: "New Orders", value: stats.ordersNew || 0 },
+      { label: "Processing", value: stats.ordersProcessing || 0 },
+      { label: "Revenue (7d)", value: `₹${Number(stats.revenue7d || 0).toLocaleString()}` },
+      { label: "Views (7d)", value: Number(stats.views7d || 0).toLocaleString() },
+    ],
+    [localProducts, stats]
+  );
 
   return (
     <div className="seller-page">
-      <SellerHeader user={user} token={token} />
+      {/* Header */}
+      <header className="seller-header">
+        <div className="seller-header-left">
+          <div className="seller-avatar">
+            <img src={user?.profileImage || "/default-avatar.png"} alt="Seller" />
+          </div>
+          <div>
+            <h1>Hello, {user?.firstName || user?.username || "Seller"} 👋</h1>
+            <p className="seller-sub">
+              Role: {user?.role || (user?.roles?.[0] ?? "SELLER")} · Token: {token ? "Yes" : "No"}
+            </p>
+          </div>
+        </div>
+        <div className="seller-header-right">
+          <button className="seller-ghost-btn" onClick={() => navigate("/profile")}>Profile</button>
+          <button className="seller-ghost-btn" onClick={() => navigate("/seller/orders")}>Orders</button>
+          <button className="seller-ghost-btn" onClick={() => navigate("/seller/products")}>Products</button>
+        </div>
+      </header>
 
+      {/* KPIs */}
       <SellerKPIs kpis={kpis} />
 
+      {/* Quick actions */}
       <SellerActions
         token={token}
-        onOpenQuickAdd={openQuickAdd}
+        onOpenQuickAdd={() => { setModalMode("create"); setEditingProduct(null); setShowAdd(true); }}
         onExportProducts={onExportProducts}
         onExportOrders={onExportOrders}
       />
 
+      {/* Main grid */}
       <section className="seller-grid">
         <ProductsCard
-          products={products}
-          onNew={openQuickAdd}
-          onViewProduct={(id) => onViewProduct?.(id)}
-          onEditProduct={(p) => onEditProduct?.(p)}
-          onToggleListing={(p) => onToggleListing?.(p)}
+          products={localProducts}
+          onAddProduct={() => { setModalMode("create"); setEditingProduct(null); setShowAdd(true); }}
+          onEditProduct={handleEditRequest}
+          onViewProduct={onViewProduct}
+          onToggleListing={onToggleListing}
         />
 
         <OrdersCard
           orders={orders}
-          onViewAll={() => navigate("/seller/orders")}
-          onViewOrder={(id) => onViewOrder?.(id)}
-          onFulfill={(o) => onFulfillOrder?.(o)}
+          onViewOrder={onViewOrder}
+          onFulfillOrder={onFulfillOrder}
         />
 
         <PayoutCard
           balance={stats.balance}
           nextPayoutDate={stats.nextPayoutDate}
-          onRequest={() => onPayoutRequest?.()}
-          onHistory={() => navigate("/seller/payouts")}
+          onPayoutRequest={onPayoutRequest}
         />
 
         <InventoryAlertsCard
-          products={products}
-          onRestock={(p) => onEditProduct?.(p)}
+          products={localProducts}
+          onEditProduct={handleEditRequest}
         />
       </section>
 
+      {/* Modal (create / edit) */}
       <QuickAddModal
-        open={showQuickAdd}
-        onClose={closeQuickAdd}
+        open={showAdd}
+        onClose={() => { setShowAdd(false); setModalMode("create"); setEditingProduct(null); }}
         user={user}
         token={token}
-        defaultDraft={draftProduct}
-        onSubmit={handleQuickAddSubmit}
+        onSubmit={handleSubmitModal}
+        mode={modalMode}                     // "create" | "edit"
+        initialValues={editingProduct}       // prefill for edit
+        fieldsToEdit={["price","quantity","images","active","description"]} // limit edit fields
       />
     </div>
   );
