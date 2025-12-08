@@ -2,35 +2,57 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { useParams, useNavigate, useLocation } from "react-router-dom";
 import API, * as api from "../services/api"; // getProductById(id, token)
+import { addToCart, addToWishlist } from "../services/api";
 import "./ViewProductRoute.css";
 const safeParse = (val) => {
   if (!val || typeof val !== "string") return null;
   try { return JSON.parse(val); } catch { return null; }
 };
-const imageFrom = (p) => {
-  if (!p) return "/placeholder.png";
-  if (typeof p.images === "string") return p.images;    // data URL or http
-  if (typeof p.image === "string") return p.image;
-  if (Array.isArray(p.images)) {
-    const f = p.images[0];
-    if (typeof f === "string") return f;
-    if (f?.url) return f.url;
-    if (f?.src) return f.src;
-  }
-  if (p?.images?.url) return p.images.url;
-  if (p?.images?.src) return p.images.src;
-  return "/placeholder.png";
+
+// Enhance image resolution: handle relative URLs and base prefix
+const BASE = 'http://localhost:8080';
+const normalizeSrc = (src) => {
+  if (!src) return '/placeholder.png';
+  if (src.startsWith('http://') || src.startsWith('https://') || src.startsWith('data:')) return src;
+  // handle backend returning "/images/..." or "/api/files/..."
+  if (src.startsWith('/')) return `${BASE}${src}`;
+  return src;
 };
+
+const imageListFrom = (p) => {
+  const list = [];
+  if (!p) return list;
+  if (Array.isArray(p.images)) {
+    for (const it of p.images) {
+      const s = typeof it === 'string' ? it : (it?.url || it?.src);
+      if (s) list.push(normalizeSrc(s));
+    }
+  } else if (typeof p.images === 'string') {
+    list.push(normalizeSrc(p.images));
+  }
+  if (p?.image) list.push(normalizeSrc(p.image));
+  if (Array.isArray(p?.imageUrls)) list.push(...p.imageUrls.map(normalizeSrc));
+  return list.length ? list : ["/placeholder.png"];
+};
+
 const toINR = (v, c = "INR") =>
   new Intl.NumberFormat("en-IN", { style: "currency", currency: c }).format(Number(v || 0));
 
 export default function ViewProductRoute() {
-  const { productId } = useParams();              // <-- must match your route
+  const { productId } = useParams();
   const navigate = useNavigate();
-  const { state } = useLocation();                // optional preloaded product
+  const { state } = useLocation();
   const [product, setProduct] = useState(state?.product || null);
   const [loading, setLoading] = useState(!state?.product);
   const [error, setError] = useState(null);
+  const [busy, setBusy] = useState(false);
+
+  const storedUser = (() => {
+    try { return JSON.parse(localStorage.getItem('auth_user') || 'null'); } catch { return null; }
+  })();
+  const token = localStorage.getItem('auth_token') || null;
+  const username = storedUser?.username || null;
+  const isAdmin = (storedUser?.role || '').toString().toUpperCase() === 'ADMIN';
 
   useEffect(() => {
     let ignore = false;
@@ -38,11 +60,7 @@ export default function ViewProductRoute() {
       try {
         setLoading(true);
         setError(null);
-        const token = localStorage.getItem("token"); // or your auth store
-        // right before calling the API
-        console.log("GET URL =>", API.getUri({ url: "/products/getProduct", params: { productId: productId } }));
         const res = await api.getProductById(productId, token);
-        // backend: { success, product: {...} }
         const p = res?.data?.product ?? res?.product ?? null;
         if (!ignore) setProduct(p);
       } catch (e) {
@@ -52,11 +70,41 @@ export default function ViewProductRoute() {
       }
     })();
     return () => { ignore = true; };
-  }, [productId]);
+  }, [productId, token]);
 
   const descObj = useMemo(() => safeParse(product?.description), [product]);
   const metaObj = useMemo(() => safeParse(product?.metadata), [product]);
-  const img = imageFrom(product);
+  const images = imageListFrom(product);
+  const [activeIdx, setActiveIdx] = useState(0);
+
+  useEffect(() => { setActiveIdx(0); }, [productId]);
+
+  const handleAddToCart = async () => {
+    if (!username || !token || !product?.id) return;
+    try {
+      setBusy(true);
+      await addToCart(username, product.id, 1, token);
+      // Optionally navigate or show feedback
+      alert('Added to cart');
+    } catch (e) {
+      alert(e?.message || 'Failed to add to cart');
+    } finally {
+      setBusy(false);
+    }
+  };
+
+  const handleAddToWishlist = async () => {
+    if (!username || !token || !product?.id) return;
+    try {
+      setBusy(true);
+      await addToWishlist(username, product.id, token);
+      alert('Added to wishlist');
+    } catch (e) {
+      alert(e?.message || 'Failed to add to wishlist');
+    } finally {
+      setBusy(false);
+    }
+  };
 
   if (loading) return <p style={{ padding: 40 }}>Loading product…</p>;
   if (error)   return <p style={{ padding: 40, color: "crimson" }}>Failed to load: {String(error?.message || error)}</p>;
@@ -64,38 +112,56 @@ export default function ViewProductRoute() {
 
   return (
     <div className="product-view">
-  <button className="back-btn" onClick={() => navigate(-1)}>← Back</button>
-  <h2>{product.name}</h2>
+      <button className="back-btn" onClick={() => navigate(-1)}>← Back</button>
 
-  <img
-    src={img}
-    alt={product.name || "Product"}
-    className="pv-thumb"
-  />
+      {/* Left: gallery */}
+      <div className="pv-gallery">
+        <img className="pv-main-img" src={images[activeIdx]} alt={product.name || 'Product'} />
+        <div className="pv-thumbs">
+          {images.map((src, i) => (
+            <div key={i} className="pv-thumb-item" onClick={() => setActiveIdx(i)}>
+              <img src={src} alt={`thumb-${i}`} />
+            </div>
+          ))}
+        </div>
+      </div>
 
-  <p><strong>SKU:</strong> {product.sku || "—"}</p>
-  <p><strong>Price:</strong> ₹{product.price}</p>
-  <p><strong>Quantity:</strong> {product.quantity ?? 0}</p>
-  <p><strong>Category:</strong> {product.category || "—"}</p>
-  <p><strong>Status:</strong> {product.active ? "ACTIVE" : "DRAFT"}</p>
+      {/* Right: details */}
+      <div className="pv-details">
+        <h2 className="pv-title">{product.name}</h2>
+        <div className="pv-meta-row">
+          SKU: {product.sku || '—'} • Category: {product.category || '—'} • Status: {product.active ? 'ACTIVE' : 'DRAFT'}
+        </div>
+        <div className="pv-price">{toINR(product.price)}</div>
+        <div className="pv-cta-row">
+          <button className="pv-cta" onClick={handleAddToCart} disabled={busy}>Add to Cart</button>
+          <button className="pv-cta secondary" onClick={handleAddToWishlist} disabled={busy}>Add to Wishlist</button>
+          {isAdmin && (
+            <button className="pv-cta secondary" onClick={() => navigate(`/seller/edit-product/${productId}`)}>Edit</button>
+          )}
+        </div>
 
-  {descObj && (
-    <>
-      <h3>Specs</h3>
-      <pre>{JSON.stringify(descObj, null, 2)}</pre>
-    </>
-  )}
+        {descObj && (
+          <div className="pv-specs">
+            <h3>Specifications</h3>
+            <table className="pv-spec-table">
+              {Object.entries(descObj).map(([k,v]) => (
+                <tr key={k}>
+                  <td>{k}</td>
+                  <td>{String(v)}</td>
+                </tr>
+              ))}
+            </table>
+          </div>
+        )}
 
-  {metaObj && (
-    <>
-      <h3>Metadata</h3>
-      <pre>{JSON.stringify(metaObj, null, 2)}</pre>
-    </>
-  )}
-
-  <button className="cta" onClick={() => navigate(`/seller/edit-product/${productId}`)}>
-    Edit Product
-  </button>
-</div>
+        {metaObj && (
+          <div className="pv-metadata">
+            <h3>Product Details</h3>
+            <pre style={{ whiteSpace: 'pre-wrap' }}>{JSON.stringify(metaObj, null, 2)}</pre>
+          </div>
+        )}
+      </div>
+    </div>
   );
 }

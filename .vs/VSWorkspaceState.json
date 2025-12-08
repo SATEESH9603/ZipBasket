@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\frontend",
+    "\\frontend\\src",
+    "\\frontend\\src\\components",
+    "\\frontend\\src\\components\\Address",
+    "\\frontend\\src\\components\\Cart",
+    "\\frontend\\src\\components\\Checkout",
+    "\\frontend\\src\\components\\Dashboard",
+    "\\frontend\\src\\components\\Orders",
+    "\\frontend\\src\\components\\UserProfile"
+  ],
+  "SelectedNode": "\\frontend\\src\\components\\Orders\\OrdersPage.css",
+  "PreviewInSolutionExplorer": false
+}

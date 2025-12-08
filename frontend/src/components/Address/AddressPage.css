@@ -1,0 +1,187 @@
+/* Enhanced modern styles for AddressPage with rich hover, transitions, and polished controls */
+.address-page {
+  padding: 28px;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.address-page h2 {
+  margin: 0 0 18px;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+/* Form card */
+.address-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #e9e9ef;
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 8px 22px rgba(27, 31, 35, 0.06);
+  transition: box-shadow 0.2s ease, transform 0.08s ease;
+}
+
+.address-form:hover {
+  box-shadow: 0 10px 26px rgba(27, 31, 35, 0.09);
+}
+
+/* Inputs */
+.address-form select,
+.address-form input {
+  padding: 12px 14px;
+  border: 1px solid #d7d7de;
+  border-radius: 10px;
+  font-size: 14px;
+  background: linear-gradient(0deg, #fafbff, #fafbff);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, background 0.2s ease;
+}
+
+.address-form select:focus,
+.address-form input:focus {
+  outline: none;
+  border-color: #5b57ff;
+  box-shadow: 0 0 0 3px rgba(91, 87, 255, 0.18);
+  background: #fff;
+}
+
+/* Custom select drop-down */
+.address-form select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 8l5 5 5-5' stroke='%23666' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 18px;
+}
+
+.address-form .default-row {
+  grid-column: span 2;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #595a6c;
+  padding-top: 2px;
+}
+
+/* Primary button */
+.address-form button {
+  grid-column: span 2;
+  margin-top: 2px;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #5b57ff, #7a73ff);
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  cursor: pointer;
+  transition: transform 0.08s ease, filter 0.18s ease, box-shadow 0.2s ease;
+  box-shadow: 0 6px 16px rgba(91, 87, 255, 0.25);
+}
+
+.address-form button:hover {
+  filter: brightness(1.06);
+  box-shadow: 0 8px 20px rgba(91, 87, 255, 0.3);
+}
+
+.address-form button:active {
+  transform: translateY(1px) scale(0.995);
+}
+
+/* Address list as responsive cards */
+.address-list {
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 14px;
+}
+
+.address-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border: 1px solid #ececf3;
+  border-radius: 14px;
+  padding: 16px;
+  background: #fff;
+  box-shadow: 0 10px 26px rgba(27, 31, 35, 0.06);
+  transition: box-shadow 0.18s ease, transform 0.08s ease;
+}
+
+.address-item:hover {
+  box-shadow: 0 12px 32px rgba(27, 31, 35, 0.09);
+}
+
+.address-item p {
+  margin: 3px 0;
+  color: #292a33;
+  font-size: 14px;
+}
+
+.address-item .tag {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: #eef0ff;
+  color: #4b48ff;
+  font-size: 12px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+/* Secondary action */
+.address-item button {
+  padding: 9px 12px;
+  border: 1px solid #e3e3ea;
+  border-radius: 10px;
+  background: #f7f7fb;
+  color: #2d2e38;
+  cursor: pointer;
+  transition: background 0.15s ease, box-shadow 0.2s ease, transform 0.08s ease;
+}
+
+.address-item button:hover {
+  background: #f1f1f8;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.address-item button:active {
+  transform: translateY(1px);
+}
+
+/* Error state */
+.error {
+  color: #d0342c;
+  font-weight: 600;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 640px) {
+  .address-page {
+    padding: 16px;
+  }
+  .address-form {
+    grid-template-columns: 1fr;
+    padding: 14px;
+  }
+  .address-form .default-row,
+  .address-form button {
+    grid-column: span 1;
+  }
+  .address-list {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .address-item {
+    padding: 12px;
+    border-radius: 12px;
+  }
+  .address-form select,
+  .address-form input {
+    font-size: 15px;
+  }
+}
