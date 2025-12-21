@@ -3,19 +3,22 @@ import React, { useEffect, useMemo, useState } from "react";
 import { useParams, useNavigate, useLocation } from "react-router-dom";
 import API, * as api from "../services/api"; // getProductById(id, token)
 import { addToCart, addToWishlist } from "../services/api";
+import { toast } from "react-toastify";
 import "./ViewProductRoute.css";
+import { ASSET_BASE_URL } from '../config';
+
 const safeParse = (val) => {
   if (!val || typeof val !== "string") return null;
   try { return JSON.parse(val); } catch { return null; }
 };
 
 // Enhance image resolution: handle relative URLs and base prefix
-const BASE = 'http://localhost:8080';
+// const BASE = 'http://localhost:8080';
 const normalizeSrc = (src) => {
   if (!src) return '/placeholder.png';
   if (src.startsWith('http://') || src.startsWith('https://') || src.startsWith('data:')) return src;
-  // handle backend returning "/images/..." or "/api/files/..."
-  if (src.startsWith('/')) return `${BASE}${src}`;
+  // if (src.startsWith('/')) return `${BASE}${src}`;
+  if (src.startsWith('/')) return `${ASSET_BASE_URL}${src}`;
   return src;
 };
 
@@ -73,34 +76,32 @@ export default function ViewProductRoute() {
   }, [productId, token]);
 
   const descObj = useMemo(() => safeParse(product?.description), [product]);
-  const metaObj = useMemo(() => safeParse(product?.metadata), [product]);
   const images = imageListFrom(product);
   const [activeIdx, setActiveIdx] = useState(0);
 
   useEffect(() => { setActiveIdx(0); }, [productId]);
 
   const handleAddToCart = async () => {
-    if (!username || !token || !product?.id) return;
+    if (!username || !token || !product?.id) return toast.info('Please login to add items');
     try {
       setBusy(true);
       await addToCart(username, product.id, 1, token);
-      // Optionally navigate or show feedback
-      alert('Added to cart');
+      toast.success('Added to cart');
     } catch (e) {
-      alert(e?.message || 'Failed to add to cart');
+      toast.error(e?.message || 'Failed to add to cart');
     } finally {
       setBusy(false);
     }
   };
 
   const handleAddToWishlist = async () => {
-    if (!username || !token || !product?.id) return;
+    if (!username || !token || !product?.id) return toast.info('Please login to add to wishlist');
     try {
       setBusy(true);
       await addToWishlist(username, product.id, token);
-      alert('Added to wishlist');
+      toast.success('Added to wishlist');
     } catch (e) {
-      alert(e?.message || 'Failed to add to wishlist');
+      toast.error(e?.message || 'Failed to add to wishlist');
     } finally {
       setBusy(false);
     }
@@ -145,20 +146,15 @@ export default function ViewProductRoute() {
           <div className="pv-specs">
             <h3>Specifications</h3>
             <table className="pv-spec-table">
-              {Object.entries(descObj).map(([k,v]) => (
-                <tr key={k}>
-                  <td>{k}</td>
-                  <td>{String(v)}</td>
-                </tr>
-              ))}
+              <tbody>
+                {Object.entries(descObj).map(([k,v]) => (
+                  <tr key={k}>
+                    <td className="pv-spec-key">{k.replace(/_/g, ' ')}</td>
+                    <td className="pv-spec-val">{Array.isArray(v) ? v.join(', ') : (typeof v === 'object' ? Object.entries(v).map(([ik, iv]) => `${ik}: ${Array.isArray(iv) ? iv.join(', ') : iv}`).join(' | ') : String(v ?? '—'))}</td>
+                  </tr>
+                ))}
+              </tbody>
             </table>
-          </div>
-        )}
-
-        {metaObj && (
-          <div className="pv-metadata">
-            <h3>Product Details</h3>
-            <pre style={{ whiteSpace: 'pre-wrap' }}>{JSON.stringify(metaObj, null, 2)}</pre>
           </div>
         )}
       </div>

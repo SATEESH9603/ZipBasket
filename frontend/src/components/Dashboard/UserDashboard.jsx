@@ -2,6 +2,9 @@ import React, { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './UserDashboard.css';
 import { getProducts } from '../../services/api';
+import { ASSET_BASE_URL } from '../../config';
+
+const inr = new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR' });
 
 export default function UserDashboard({ user, onLogout }) {
   const [open, setOpen] = useState(false);
@@ -60,8 +63,9 @@ export default function UserDashboard({ user, onLogout }) {
       || p?.thumbnail
       || (Array.isArray(p?.imageUrls) && p.imageUrls[0])
       || (typeof p?.images === 'string' ? p.images : null)
-      || '/placeholder.png';
-    return img;
+      || 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="160" height="120"><rect width="100%" height="100%" fill="%23fafbff"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="%239aa0a6" font-size="14" font-family="Segoe UI, Roboto, system-ui, -apple-system">No image</text></svg>';
+    if (typeof img === 'string') return img.startsWith('/') ? `${ASSET_BASE_URL}${img}` : img;
+    return img?.url || img?.src || '';
   };
 
   const isAdmin = (user?.role || '').toString().toUpperCase() === 'ADMIN';
@@ -143,7 +147,7 @@ export default function UserDashboard({ user, onLogout }) {
                     </div>
                     <div className="info">
                       <div className="name">{p.name}</div>
-                      <div className="price">?{(p.price ?? 0).toString()}</div>
+                      <div className="price">{inr.format(Number(p.price || 0))}</div>
                     </div>
                   </div>
                 ))}

@@ -1,7 +1,8 @@
 import axios from 'axios';
+import { API_BASE_URL } from '../config';
 
 const API = axios.create({
-  baseURL: 'http://localhost:8080/api',
+  baseURL: API_BASE_URL,
   headers: { 'Content-Type': 'application/json' },
 });
 
@@ -100,10 +101,26 @@ export const updateProduct = (id, data, token) =>
 
 export const viewCart = (username, token) =>
   API.get(`/cart/view/${username}`, { headers: { Authorization: `Bearer ${token}` } });
+
 export const updateCartItems = (username, items, token) =>
   API.patch(`/cart/update/${username}`, { items }, { headers: { Authorization: `Bearer ${token}` } });
-export const addToCart = (username, productId, quantity = 1, token) =>
-  updateCartItems(username, [{ productId, quantity }], token);
+// Merge the new product into the existing cart items and preserve others
+export const addToCart = async (username, productId, quantity = 1, token) => {
+  const res = await viewCart(username, token);
+  const list = Array.isArray(res?.data?.items) ? res.data.items : Array.isArray(res?.items) ? res.items : [];
+
+  // Build a productId -> qty map, then merge incoming
+  const map = new Map();
+  for (const it of list) {
+    const pid = it?.productId ?? it?.id ?? it?.product?.id;
+    const qty = Number(it?.quantity ?? it?.qty ?? 1);
+    if (pid != null) map.set(pid, (map.get(pid) || 0) + qty);
+  }
+  map.set(productId, (map.get(productId) || 0) + Number(quantity));
+
+  const payload = Array.from(map.entries()).map(([pid, qty]) => ({ productId: pid, quantity: qty }));
+  return updateCartItems(username, payload, token);
+};
 
 export const viewWishlist = (username, token) =>
   API.get(`/user/wishlist/view/${username}`, { headers: { Authorization: `Bearer ${token}` } });
