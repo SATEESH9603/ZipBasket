@@ -4,8 +4,7 @@ import { viewWishlist, removeFromWishlist, moveWishlistToCart, viewCart, getProd
 import { ASSET_BASE_URL } from "../../config";
 import { toast } from "react-toastify";
 
-const inr = new Intl.NumberFormat("en-IN", { style: "currency", currency: "INR" });
-// Base64 SVG placeholder to avoid Unicode in source
+const inr = new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR' });
 const PLACEHOLDER = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAiIGhlaWdodD0iMTIwIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZmFmYmZmIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM5YWEwYTYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtZmFtaWx5PSJTZWdvZSBVSSwgUm9ib3RvLCBzeXN0ZW0tdWksIC1hcHBsZS1zeXN0ZW0iPk5vIGltYWdlPC90ZXh0Pjwvc3ZnPg==";
 
 
@@ -123,13 +122,17 @@ export default function WishlistPage({ username, token }) {
 
   const [moveQty, setMoveQty] = useState(1);
 
+  // Move to cart with selected quantity: add to cart, then remove from wishlist
   async function moveToCartWithQty(productId, qty) {
     try {
+      // Reserve and merge quantity via cart update flow
       await addToCart(username, productId, qty, token);
+      // Remove from wishlist only after cart update succeeds
+      await removeFromWishlist(username, productId, token);
       await loadAll();
-      toast.success("Added " + qty + " to cart");
+      toast.success("Moved to cart");
     } catch (e) {
-      toast.error(e && e.message ? e.message : "Failed to add to cart");
+      toast.error(e && e.message ? e.message : "Failed to move to cart");
     }
   }
 
@@ -174,7 +177,7 @@ export default function WishlistPage({ username, token }) {
                     <input type="number" min="1" value={moveQty} readOnly />
                     <button className="btn btn-outline" onClick={() => setMoveQty(moveQty + 1)}>+</button>
                   </div>
-                  <button className="btn btn-primary" onClick={() => moveToCartWithQty(pid, moveQty)}>Add to Cart</button>
+                  <button className="btn btn-primary" onClick={() => moveToCartWithQty(pid, moveQty)}>Move to Cart</button>
                   <button className="btn btn-outline" onClick={() => removeItem(pid)}>Remove</button>
                 </div>
               </div>

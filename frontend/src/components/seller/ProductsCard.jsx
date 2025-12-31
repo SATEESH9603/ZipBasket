@@ -2,6 +2,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
+const inr = new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR' });
+
 const toText = (v) => {
   if (v == null) return "—";
   if (v instanceof Date) return v.toLocaleString();
@@ -49,6 +51,7 @@ export default function ProductsCard({
   onEditProduct,      // <- if provided, we'll use it; else fallback to route nav
   onViewProduct,
   onToggleListing,
+  showManageAll = true,
 }) {
   const navigate = useNavigate();
 
@@ -87,19 +90,18 @@ export default function ProductsCard({
                   </div>
                 </div>
 
-                <div>₹{price.toFixed(2)}</div>
+                <div>{inr.format(price)}</div>
                 <div className={stock <= 5 ? "warn" : ""}>{stock}</div>
                 <div className={`pill pill--${statusFrom(p).toLowerCase()}`}>{statusFrom(p)}</div>
 
                 <div className="row-actions">
-                  <button onClick={() => navigate(`/seller/product/${pid}`, { state: { product: p } })}>
+                  <button onClick={() => onViewProduct ? onViewProduct(p) : navigate(`/seller/product/${pid}`, { state: { product: p } })}>
                     View
                   </button>
                   <button onClick={() => {
                       if (onEditProduct) {
-                        onEditProduct(p); // open modal in parent if provided
+                        onEditProduct(p);
                       } else {
-                        // fallback: keep your existing behavior (route)
                         navigate(`/seller/edit-product/${pid}`);
                       }
                     }}
@@ -115,14 +117,16 @@ export default function ProductsCard({
         <p className="empty">No products yet.</p>
       )}
 
-      <div className="card-foot">
-        <button
-          className="linklike"
-          onClick={() => (window.location.href = "/seller/products")}
-        >
-          Manage all products →
-        </button>
-      </div>
+      {showManageAll && (
+        <div className="card-foot">
+          <button
+            className="linklike"
+            onClick={() => navigate('/seller/products')}
+          >
+            Manage all products →
+          </button>
+        </div>
+      )}
     </div>
   );
 }

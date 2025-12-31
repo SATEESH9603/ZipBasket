@@ -1,9 +1,21 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-export default function InventoryAlertsCard({ products = [], onRestock }) {
+export default function InventoryAlertsCard({ products = [], onEditProduct }) {
   const navigate = useNavigate();
-  const lowStock = Array.isArray(products) ? products.filter(p => Number(p?.stock || 0) <= 5) : [];
+  const list = Array.isArray(products) ? products : [];
+  // Use quantity (fallback to stock) and consider only active products
+  const lowStock = list.filter(p => {
+    const qty = Number(p?.quantity ?? p?.stock ?? 0);
+    const active = (p?.isActive ?? p?.active ?? true) === true;
+    return active && qty <= 5;
+  });
+
+  const handleRestock = (p) => {
+    if (onEditProduct) return onEditProduct(p);
+    const id = p?.id ?? p?.productId;
+    navigate(`/seller/edit-product/${id}`);
+  };
 
   return (
     <div className="card tips">
@@ -16,8 +28,8 @@ export default function InventoryAlertsCard({ products = [], onRestock }) {
           {lowStock.slice(0, 6).map((p, idx) => (
             <li key={p?.id ?? idx}>
               <span className="dot" />
-              {p?.name || "Product"} — Stock: {p?.stock ?? 0}
-              <button className="tiny link" onClick={() => onRestock?.(p) || navigate(`/seller/products/${p?.id}/edit`)}>
+              {p?.name || "Product"} — Stock: {Number(p?.quantity ?? p?.stock ?? 0)}
+              <button className="tiny link" onClick={() => handleRestock(p)}>
                 Restock
               </button>
             </li>
@@ -29,4 +41,3 @@ export default function InventoryAlertsCard({ products = [], onRestock }) {
     </div>
   );
 }
- 

@@ -14,12 +14,15 @@ import CategoryPage from "./pages/CategoryPage";
 import SellerRoute from "./utils/SellerRoute";
 import ViewProductRoute from "./utils/ViewProductRoute";
 import EditProductRoute from "./utils/EditProductRoute";
-// New pages
+import SellerProductsPage from "./components/seller/SellerProductsPage";
+import SellerAnalyticsPage from "./components/seller/SellerAnalyticsPage";
+import SellerOrdersPage from "./components/seller/SellerOrdersPage";
 import CartPage from "./components/Cart/CartPage";
 import WishlistPage from "./components/Wishlist/WishlistPage";
 import AddressPage from "./components/Address/AddressPage";
 import CheckoutPage from "./components/Checkout/CheckoutPage";
 import OrdersPage from "./components/Orders/OrdersPage";
+import OrderDetailPage from "./components/Orders/OrderDetailPage";
 
 function App() {
   const [token, setToken] = useState(null);
@@ -83,25 +86,30 @@ function App() {
                   path="dashboard"
                   element={token ? <UserDashboard user={user} onLogout={handleLogout} /> : <Navigate to="/login" />}
                 />
-                {/* Role-specific destinations */}
                 <Route
                   path="/user-dashboard"
                   element={token ? <UserDashboard user={user} onLogout={handleLogout} /> : <Navigate to="/login" replace />}
                 />
-                {/* Admin route mapped to the same dashboard to avoid broken redirects */}
                 <Route
                   path="/admin-dashboard"
                   element={token ? <UserDashboard user={user} onLogout={handleLogout} /> : <Navigate to="/login" replace />}
                 />
                 <Route
                   path="/seller-dashboard"
-                  element={
-                    token ? (
-                      <SellerRoute user={user} token={token} />
-                    ) : (
-                      <Navigate to="/login" replace />
-                    )
-                  }
+                  element={token ? <SellerRoute user={user} token={token} /> : <Navigate to="/login" replace />}
+                />
+                {/* Dedicated manage products view */}
+                <Route
+                  path="/seller/products"
+                  element={token ? <SellerProductsPage user={user} token={token} /> : <Navigate to="/login" replace />}
+                />
+                <Route
+                  path="/seller/analytics"
+                  element={token ? <SellerAnalyticsPage user={user} token={token} /> : <Navigate to="/login" replace />}
+                />
+                <Route
+                  path="/seller/orders"
+                  element={token ? <SellerOrdersPage user={user} token={token} /> : <Navigate to="/login" replace />}
                 />
                 <Route path="/profile" element={
                   token ? <ProfileView user={user} token={token} onUpdateProfile={handleUpdateProfile} handleLogout={handleLogout} /> : <Navigate to="/login" />
@@ -117,6 +125,7 @@ function App() {
                 <Route path="/addresses" element={token && username ? <AddressPage username={username} token={token} /> : <Navigate to="/login" />} />
                 <Route path="/checkout" element={token && username ? <CheckoutPage username={username} token={token} /> : <Navigate to="/login" />} />
                 <Route path="/orders" element={token && username ? <OrdersPage username={username} token={token} /> : <Navigate to="/login" />} />
+                <Route path="/orders/:orderId" element={token && username ? <OrderDetailPage username={username} token={token} /> : <Navigate to="/login" />} />
                 <Route path="*" element={<Navigate to="/" />} />
               </Routes>
             </>

@@ -15,7 +15,6 @@ export default function UserDashboard({ user, onLogout }) {
   const [error, setError] = useState('');
   const [products, setProducts] = useState([]);
 
-  // Initials: Firstname first letter + Lastname last letter
   const initials = `${user?.firstName?.[0] || ''}${user?.lastName?.slice(-1) || ''}`.toUpperCase();
 
   useEffect(() => {
@@ -28,13 +27,13 @@ export default function UserDashboard({ user, onLogout }) {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
-  // Load catalog sections using JWT from storage (no prop contract changes)
   useEffect(() => {
     const token = localStorage.getItem('auth_token');
     async function load() {
       setLoading(true);
       setError('');
       try {
+        // Server filters IN_STOCK by default via getProducts default filter
         const data = await getProducts({ page: 1, token });
         const list = Array.isArray(data?.products) ? data.products : (Array.isArray(data) ? data : []);
         setProducts(list);
@@ -56,7 +55,6 @@ export default function UserDashboard({ user, onLogout }) {
     return Array.from(map.entries()).map(([name, count]) => ({ name, count }));
   }, [products]);
 
-  // Resolve product image from various fields
   const resolveImage = (p) => {
     const img = (Array.isArray(p?.images) && p.images[0])
       || p?.image
@@ -71,13 +69,29 @@ export default function UserDashboard({ user, onLogout }) {
   const isAdmin = (user?.role || '').toString().toUpperCase() === 'ADMIN';
 
   const handleProductClick = (p) => {
-    // Only admins can go to edit-product; others see product view
+    const id = p?.id || p?.productId;
+    if (!id) return;
     if (isAdmin) {
-      navigate(`/seller/edit-product/${p.id}`);
+      navigate(`/seller/edit-product/${id}`);
     } else {
-      navigate(`/seller/product/${p.id}`);
+      navigate(`/seller/product/${id}`);
     }
   };
+
+  // Use products directly; server already filters to IN_STOCK by default
+  const visibleProducts = products || [];
+
+  // Prebuild category chips to avoid nested JSX parsing quirks
+  const categoryChips = React.useMemo(() => {
+    if (categories.length === 0) {
+      return <span className="chip">No categories</span>;
+    }
+    return categories.map((c) => (
+      <button key={c.name} className="chip" onClick={() => navigate(`/category/${encodeURIComponent(c.name)}`)}>
+        {c.name} <span className="badge">{c.count}</span>
+      </button>
+    ));
+  }, [categories, navigate]);
 
   return (
     <div>
@@ -115,39 +129,32 @@ export default function UserDashboard({ user, onLogout }) {
         <h2>Welcome, {user?.firstName || 'User'}!</h2>
         <p>Your personalized home.</p>
 
-        {loading && <p>Loading products…</p>}
+        {loading && <p>Loading products...</p>}
         {error && <p className="error">{error}</p>}
 
         {!loading && !error && (
           <>
-            {/* Categories section */}
             <section className="dashboard-section">
               <h3>Categories</h3>
               <div className="dashboard-chips">
-                {categories.length === 0 ? (
-                  <span className="chip">No categories</span>
-                ) : (
-                  categories.map((c) => (
-                    <button key={c.name} className="chip" onClick={() => navigate(`/category/${encodeURIComponent(c.name)}`)}>
-                      {c.name} <span className="badge">{c.count}</span>
-                    </button>
-                  ))
-                )}
+                {categoryChips}
               </div>
             </section>
 
-            {/* Featured/New arrivals */}
             <section className="dashboard-section">
               <h3>New Arrivals</h3>
               <div className="product-grid">
-                {(products || []).slice(0, 8).map((p) => (
-                  <div className="product-card" key={p.id} onClick={() => handleProductClick(p)}>
+                {visibleProducts.slice(0, 8).map((p) => (
+                  <div className="product-card" key={p.id || p.productId} onClick={() => handleProductClick(p)}>
                     <div className="thumb">
                       <img src={resolveImage(p)} alt={p.name || 'Product'} />
                     </div>
                     <div className="info">
                       <div className="name">{p.name}</div>
                       <div className="price">{inr.format(Number(p.price || 0))}</div>
+                      {p.sellerName && (
+                        <div className="seller-line">Sold by: {p.sellerName}</div>
+                      )}
                     </div>
                   </div>
                 ))}

@@ -3,32 +3,92 @@
   "WorkspaceRootPath": "C:\\Users\\smaddirala\\onlinetestapp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\Cart\\CartPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\src\\components\\Cart\\CartPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Service\\OrderService.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Service\\OrderService.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\Wishlist\\WishlistPage.css||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\src\\components\\Wishlist\\WishlistPage.css||{8B382828-6202-11D1-8870-0000F87579D2}|"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Controller\\OrderController.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Controller\\OrderController.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\Wishlist\\WishlistPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\src\\components\\Wishlist\\WishlistPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\seller\\OrdersCard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\src\\components\\seller\\OrdersCard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\services\\api.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\src\\services\\api.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\Dashboard\\SellerDashboard.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\src\\components\\Dashboard\\SellerDashboard.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\Dashboard\\SellerDashboard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\src\\components\\Dashboard\\SellerDashboard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\utils\\SellerRoute.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\src\\utils\\SellerRoute.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\seller\\SellerActions.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\src\\components\\seller\\SellerActions.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Domain\\Dto\\OrderSummaryDto.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Domain\\Dto\\OrderSummaryDto.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\seller\\QuickAddModal.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\src\\components\\seller\\QuickAddModal.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\utils\\EditProductRoute.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\src\\utils\\EditProductRoute.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\seller\\ProductsCard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\src\\components\\seller\\ProductsCard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\Checkout\\CheckoutPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\src\\components\\Checkout\\CheckoutPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Service\\ProductService.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Service\\ProductService.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\resources\\schema.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\onlinetestbackendservice\\src\\main\\resources\\schema.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\Wishlist\\WishlistPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\src\\components\\Wishlist\\WishlistPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Repo\\ProductRepo.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Repo\\ProductRepo.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\Dashboard\\UserDashboard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\src\\components\\Dashboard\\UserDashboard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\Wishlist\\WishlistPage.css||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\src\\components\\Wishlist\\WishlistPage.css||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\Cart\\CartPage.css||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\src\\components\\Cart\\CartPage.css||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Controller\\ProductController.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Controller\\ProductController.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\Cart\\CartPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\src\\components\\Cart\\CartPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\services\\api.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\src\\services\\api.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\utils\\SellerRoute.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\src\\utils\\SellerRoute.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -45,14 +105,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\Orders\\OrdersPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\src\\components\\Orders\\OrdersPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\Checkout\\CheckoutPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\src\\components\\Checkout\\CheckoutPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\Cart\\CartPage.css||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\src\\components\\Cart\\CartPage.css||{8B382828-6202-11D1-8870-0000F87579D2}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\UserProfile\\ProfileView.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -121,6 +173,86 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\UserProfile\\ProfileView.css||{8B382828-6202-11D1-8870-0000F87579D2}|",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\src\\components\\UserProfile\\ProfileView.css||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Domain\\Dto\\ProductDto.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Domain\\Dto\\ProductDto.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Service\\CartService.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Service\\CartService.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Service\\IProductService.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Service\\IProductService.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Service\\CheckoutService.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Service\\CheckoutService.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Repo\\Product.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Repo\\Product.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Repo\\Cart.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Repo\\Cart.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Configuration\\ReservationCleanupConfig.java||{3B902123-F8A7-4915-9F01-361F908088D0}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Configuration\\ReservationCleanupConfig.java||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\resources\\application.properties||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\onlinetestbackendservice\\src\\main\\resources\\application.properties||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Service\\IOrderService.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Service\\IOrderService.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Domain\\Dto\\OrderDetailDto.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Domain\\Dto\\OrderDetailDto.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Domain\\Mapper.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Domain\\Mapper.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\Dashboard\\SellerDashboard.css||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\src\\components\\Dashboard\\SellerDashboard.css||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\seller\\InventoryAlertsCard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\src\\components\\seller\\InventoryAlertsCard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\seller\\SellerProductsPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\src\\components\\seller\\SellerProductsPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\seller\\SellerActions.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\src\\components\\seller\\SellerActions.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Domain\\Dto\\OrdersPageDto.java||{3B902123-F8A7-4915-9F01-361F908088D0}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Domain\\Dto\\OrdersPageDto.java||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\seller\\SellerAnalyticsPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\src\\components\\seller\\SellerAnalyticsPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\Orders\\OrderDetailPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\src\\components\\Orders\\OrderDetailPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\seller\\SellerOrdersPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\src\\components\\seller\\SellerOrdersPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Repo\\OrderRepo.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Repo\\OrderRepo.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -130,7 +262,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 311,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -154,15 +286,209 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SellerRoute.jsx",
-              "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\utils\\SellerRoute.jsx",
-              "RelativeDocumentMoniker": "frontend\\src\\utils\\SellerRoute.jsx",
-              "ToolTip": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\utils\\SellerRoute.jsx",
-              "RelativeToolTip": "frontend\\src\\utils\\SellerRoute.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 59,
+              "Title": "SellerAnalyticsPage.jsx",
+              "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\seller\\SellerAnalyticsPage.jsx",
+              "RelativeDocumentMoniker": "frontend\\src\\components\\seller\\SellerAnalyticsPage.jsx",
+              "ToolTip": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\seller\\SellerAnalyticsPage.jsx",
+              "RelativeToolTip": "frontend\\src\\components\\seller\\SellerAnalyticsPage.jsx",
+              "ViewState": "AgIAAFgAAAAAAAAAAIBJwFoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-12-21T05:14:30.741Z",
+              "WhenOpened": "2025-12-31T13:16:15.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "OrdersPageDto.java",
+              "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Domain\\Dto\\OrdersPageDto.java",
+              "RelativeDocumentMoniker": "backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Domain\\Dto\\OrdersPageDto.java",
+              "ToolTip": "C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Domain\\Dto\\OrdersPageDto.java",
+              "RelativeToolTip": "backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Domain\\Dto\\OrdersPageDto.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001630|",
+              "WhenOpened": "2025-12-31T13:05:17.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "SellerActions.jsx",
+              "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\seller\\SellerActions.jsx",
+              "RelativeDocumentMoniker": "frontend\\src\\components\\seller\\SellerActions.jsx",
+              "ToolTip": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\seller\\SellerActions.jsx",
+              "RelativeToolTip": "frontend\\src\\components\\seller\\SellerActions.jsx",
+              "ViewState": "AgIAABsAAAAAAAAAAABRwAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-12-31T11:56:53.173Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OrderController.java",
+              "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Controller\\OrderController.java",
+              "RelativeDocumentMoniker": "backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Controller\\OrderController.java",
+              "ToolTip": "C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Controller\\OrderController.java",
+              "RelativeToolTip": "backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Controller\\OrderController.java",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAuwFMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001630|",
+              "WhenOpened": "2025-12-30T18:09:57.872Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OrderService.java",
+              "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Service\\OrderService.java",
+              "RelativeDocumentMoniker": "backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Service\\OrderService.java",
+              "ToolTip": "C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Service\\OrderService.java",
+              "RelativeToolTip": "backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Service\\OrderService.java",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001630|",
+              "WhenOpened": "2025-12-21T10:18:24.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "OrderRepo.java",
+              "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Repo\\OrderRepo.java",
+              "RelativeDocumentMoniker": "backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Repo\\OrderRepo.java",
+              "ToolTip": "C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Repo\\OrderRepo.java",
+              "RelativeToolTip": "backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Repo\\OrderRepo.java",
+              "ViewState": "AgIAAA0AAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001630|",
+              "WhenOpened": "2025-12-31T14:12:46.181Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "SellerOrdersPage.jsx",
+              "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\seller\\SellerOrdersPage.jsx",
+              "RelativeDocumentMoniker": "frontend\\src\\components\\seller\\SellerOrdersPage.jsx",
+              "ToolTip": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\seller\\SellerOrdersPage.jsx",
+              "RelativeToolTip": "frontend\\src\\components\\seller\\SellerOrdersPage.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-12-31T14:04:35.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "OrderDetailPage.jsx",
+              "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\Orders\\OrderDetailPage.jsx",
+              "RelativeDocumentMoniker": "frontend\\src\\components\\Orders\\OrderDetailPage.jsx",
+              "ToolTip": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\Orders\\OrderDetailPage.jsx",
+              "RelativeToolTip": "frontend\\src\\components\\Orders\\OrderDetailPage.jsx",
+              "ViewState": "AgIAAEMAAAAAAAAAAIBJwEUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-12-31T13:54:41.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrdersCard.jsx",
+              "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\seller\\OrdersCard.jsx",
+              "RelativeDocumentMoniker": "frontend\\src\\components\\seller\\OrdersCard.jsx",
+              "ToolTip": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\seller\\OrdersCard.jsx",
+              "RelativeToolTip": "frontend\\src\\components\\seller\\OrdersCard.jsx",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAABkAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-12-31T10:37:09.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SellerDashboard.css",
+              "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\Dashboard\\SellerDashboard.css",
+              "RelativeDocumentMoniker": "frontend\\src\\components\\Dashboard\\SellerDashboard.css",
+              "ToolTip": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\Dashboard\\SellerDashboard.css",
+              "RelativeToolTip": "frontend\\src\\components\\Dashboard\\SellerDashboard.css",
+              "ViewState": "AgIAAKIAAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-12-31T10:43:39.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "SellerProductsPage.jsx",
+              "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\seller\\SellerProductsPage.jsx",
+              "RelativeDocumentMoniker": "frontend\\src\\components\\seller\\SellerProductsPage.jsx",
+              "ToolTip": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\seller\\SellerProductsPage.jsx",
+              "RelativeToolTip": "frontend\\src\\components\\seller\\SellerProductsPage.jsx",
+              "ViewState": "AgIAAE4AAAAAAAAAAABRwFEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-12-31T11:24:14.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "InventoryAlertsCard.jsx",
+              "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\seller\\InventoryAlertsCard.jsx",
+              "RelativeDocumentMoniker": "frontend\\src\\components\\seller\\InventoryAlertsCard.jsx",
+              "ToolTip": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\seller\\InventoryAlertsCard.jsx",
+              "RelativeToolTip": "frontend\\src\\components\\seller\\InventoryAlertsCard.jsx",
+              "ViewState": "AgIAACgAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-12-31T11:06:42.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "SellerDashboard.css",
+              "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\Dashboard\\SellerDashboard.css",
+              "RelativeDocumentMoniker": "frontend\\src\\components\\Dashboard\\SellerDashboard.css",
+              "ToolTip": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\Dashboard\\SellerDashboard.css",
+              "RelativeToolTip": "frontend\\src\\components\\Dashboard\\SellerDashboard.css",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-12-31T10:43:44.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SellerActions.css",
+              "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\seller\\SellerActions.css",
+              "RelativeDocumentMoniker": "frontend\\src\\components\\seller\\SellerActions.css",
+              "ToolTip": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\seller\\SellerActions.css",
+              "RelativeToolTip": "frontend\\src\\components\\seller\\SellerActions.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-12-31T10:39:12.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "OrderDetailDto.java",
+              "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Domain\\Dto\\OrderDetailDto.java",
+              "RelativeDocumentMoniker": "backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Domain\\Dto\\OrderDetailDto.java",
+              "ToolTip": "C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Domain\\Dto\\OrderDetailDto.java",
+              "RelativeToolTip": "backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Domain\\Dto\\OrderDetailDto.java",
+              "ViewState": "AgIAAB4AAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001630|",
+              "WhenOpened": "2025-12-31T10:26:48.197Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OrderSummaryDto.java",
+              "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Domain\\Dto\\OrderSummaryDto.java",
+              "RelativeDocumentMoniker": "backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Domain\\Dto\\OrderSummaryDto.java",
+              "ToolTip": "C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Domain\\Dto\\OrderSummaryDto.java",
+              "RelativeToolTip": "backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Domain\\Dto\\OrderSummaryDto.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001630|",
+              "WhenOpened": "2025-12-31T10:26:28.654Z",
               "EditorCaption": ""
             },
             {
@@ -173,53 +499,148 @@
               "RelativeDocumentMoniker": "frontend\\src\\components\\Dashboard\\SellerDashboard.jsx",
               "ToolTip": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\Dashboard\\SellerDashboard.jsx",
               "RelativeToolTip": "frontend\\src\\components\\Dashboard\\SellerDashboard.jsx",
-              "ViewState": "AgIAAMsAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABcBAAAAAAAAAAAiwCoAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2025-12-21T05:14:04.667Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 53,
+              "Title": "Mapper.java",
+              "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Domain\\Mapper.java",
+              "RelativeDocumentMoniker": "backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Domain\\Mapper.java",
+              "ToolTip": "C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Domain\\Mapper.java",
+              "RelativeToolTip": "backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Domain\\Mapper.java",
+              "ViewState": "AgIAACsBAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001630|",
+              "WhenOpened": "2025-12-31T10:27:02.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "IOrderService.java",
+              "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Service\\IOrderService.java",
+              "RelativeDocumentMoniker": "backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Service\\IOrderService.java",
+              "ToolTip": "C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Service\\IOrderService.java",
+              "RelativeToolTip": "backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Service\\IOrderService.java",
+              "ViewState": "AgIAAA8AAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001630|",
+              "WhenOpened": "2025-12-30T18:10:38.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "QuickAddModal.jsx",
+              "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\seller\\QuickAddModal.jsx",
+              "RelativeDocumentMoniker": "frontend\\src\\components\\seller\\QuickAddModal.jsx",
+              "ToolTip": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\seller\\QuickAddModal.jsx",
+              "RelativeToolTip": "frontend\\src\\components\\seller\\QuickAddModal.jsx",
+              "ViewState": "AgIAACABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-12-30T18:00:57.235Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EditProductRoute.jsx",
+              "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\utils\\EditProductRoute.jsx",
+              "RelativeDocumentMoniker": "frontend\\src\\utils\\EditProductRoute.jsx",
+              "ToolTip": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\utils\\EditProductRoute.jsx",
+              "RelativeToolTip": "frontend\\src\\utils\\EditProductRoute.jsx",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAAwA4AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-12-30T17:57:27.53Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProductsCard.jsx",
+              "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\seller\\ProductsCard.jsx",
+              "RelativeDocumentMoniker": "frontend\\src\\components\\seller\\ProductsCard.jsx",
+              "ToolTip": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\seller\\ProductsCard.jsx",
+              "RelativeToolTip": "frontend\\src\\components\\seller\\ProductsCard.jsx",
+              "ViewState": "AgIAAIIAAAAAAAAAAIBJwIQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-12-30T16:49:50.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "schema.sql",
+              "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\resources\\schema.sql",
+              "RelativeDocumentMoniker": "backend\\onlinetestbackendservice\\src\\main\\resources\\schema.sql",
+              "ToolTip": "C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\resources\\schema.sql",
+              "RelativeToolTip": "backend\\onlinetestbackendservice\\src\\main\\resources\\schema.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-12-21T14:30:57.428Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UserDashboard.jsx",
+              "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\Dashboard\\UserDashboard.jsx",
+              "RelativeDocumentMoniker": "frontend\\src\\components\\Dashboard\\UserDashboard.jsx",
+              "ToolTip": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\Dashboard\\UserDashboard.jsx",
+              "RelativeToolTip": "frontend\\src\\components\\Dashboard\\UserDashboard.jsx",
+              "ViewState": "AgIAAIsAAAAAAAAAAAAtwKcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-12-08T10:18:48.467Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ProductRepo.java",
+              "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Repo\\ProductRepo.java",
+              "RelativeDocumentMoniker": "backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Repo\\ProductRepo.java",
+              "ToolTip": "C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Repo\\ProductRepo.java",
+              "RelativeToolTip": "backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Repo\\ProductRepo.java",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001630|",
+              "WhenOpened": "2025-12-21T09:31:52.127Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProductService.java",
+              "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Service\\ProductService.java",
+              "RelativeDocumentMoniker": "backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Service\\ProductService.java",
+              "ToolTip": "C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Service\\ProductService.java",
+              "RelativeToolTip": "backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Service\\ProductService.java",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001630|",
+              "WhenOpened": "2025-12-21T06:47:45.366Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "WishlistPage.jsx",
               "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\Wishlist\\WishlistPage.jsx",
               "RelativeDocumentMoniker": "frontend\\src\\components\\Wishlist\\WishlistPage.jsx",
               "ToolTip": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\Wishlist\\WishlistPage.jsx",
               "RelativeToolTip": "frontend\\src\\components\\Wishlist\\WishlistPage.jsx",
-              "ViewState": "AgIAAGsAAAAAAAAAAAAAwLgAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAKkAAAAAAAAAAAAkwL4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-12-08T06:53:02.247Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-08T06:53:02.247Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CartPage.jsx",
-              "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\Cart\\CartPage.jsx",
-              "RelativeDocumentMoniker": "frontend\\src\\components\\Cart\\CartPage.jsx",
-              "ToolTip": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\Cart\\CartPage.jsx",
-              "RelativeToolTip": "frontend\\src\\components\\Cart\\CartPage.jsx",
-              "ViewState": "AgIAAHsAAAAAAAAAAAAMwJsAAAASAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "CheckoutPage.jsx",
+              "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\Checkout\\CheckoutPage.jsx",
+              "RelativeDocumentMoniker": "frontend\\src\\components\\Checkout\\CheckoutPage.jsx",
+              "ToolTip": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\Checkout\\CheckoutPage.jsx",
+              "RelativeToolTip": "frontend\\src\\components\\Checkout\\CheckoutPage.jsx",
+              "ViewState": "AgIAADsAAAAAAAAAAAAAAEQAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-12-08T06:52:36.634Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-08T06:53:57.323Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "api.js",
-              "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\services\\api.js",
-              "RelativeDocumentMoniker": "frontend\\src\\services\\api.js",
-              "ToolTip": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\services\\api.js",
-              "RelativeToolTip": "frontend\\src\\services\\api.js",
-              "ViewState": "AgIAAJcAAAAAAAAAAAAkwKQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-12-08T06:58:26.399Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 16,
               "Title": "WishlistPage.css",
               "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\Wishlist\\WishlistPage.css",
               "RelativeDocumentMoniker": "frontend\\src\\components\\Wishlist\\WishlistPage.css",
@@ -227,25 +648,168 @@
               "RelativeToolTip": "frontend\\src\\components\\Wishlist\\WishlistPage.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-12-08T06:53:08.825Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-08T06:53:08.825Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UserDashboard.jsx",
-              "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\Dashboard\\UserDashboard.jsx",
-              "RelativeDocumentMoniker": "frontend\\src\\components\\Dashboard\\UserDashboard.jsx",
-              "ToolTip": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\Dashboard\\UserDashboard.jsx",
-              "RelativeToolTip": "frontend\\src\\components\\Dashboard\\UserDashboard.jsx",
-              "ViewState": "AgIAAHkAAAAAAAAAAAAtwIkAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 47,
+              "Title": "Product.java",
+              "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Repo\\Product.java",
+              "RelativeDocumentMoniker": "backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Repo\\Product.java",
+              "ToolTip": "C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Repo\\Product.java",
+              "RelativeToolTip": "backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Repo\\Product.java",
+              "ViewState": "AgIAAE8AAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001630|",
+              "WhenOpened": "2025-12-21T10:21:42.845Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Cart.java",
+              "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Repo\\Cart.java",
+              "RelativeDocumentMoniker": "backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Repo\\Cart.java",
+              "ToolTip": "C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Repo\\Cart.java",
+              "RelativeToolTip": "backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Repo\\Cart.java",
+              "ViewState": "AgIAACAAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001630|",
+              "WhenOpened": "2025-12-21T10:28:48.005Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "application.properties",
+              "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\resources\\application.properties",
+              "RelativeDocumentMoniker": "backend\\onlinetestbackendservice\\src\\main\\resources\\application.properties",
+              "ToolTip": "C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\resources\\application.properties",
+              "RelativeToolTip": "backend\\onlinetestbackendservice\\src\\main\\resources\\application.properties",
+              "ViewState": "AgIAACcAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-21T10:34:07.429Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "ReservationCleanupConfig.java",
+              "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Configuration\\ReservationCleanupConfig.java",
+              "RelativeDocumentMoniker": "backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Configuration\\ReservationCleanupConfig.java",
+              "ToolTip": "C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Configuration\\ReservationCleanupConfig.java",
+              "RelativeToolTip": "backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Configuration\\ReservationCleanupConfig.java",
+              "ViewState": "AgIAADkAAAAAAAAAAIBJwDsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001630|",
+              "WhenOpened": "2025-12-21T10:29:14.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "IProductService.java",
+              "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Service\\IProductService.java",
+              "RelativeDocumentMoniker": "backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Service\\IProductService.java",
+              "ToolTip": "C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Service\\IProductService.java",
+              "RelativeToolTip": "backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Service\\IProductService.java",
+              "ViewState": "AgIAAA0AAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001630|",
+              "WhenOpened": "2025-12-21T07:05:21.229Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "CheckoutService.java",
+              "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Service\\CheckoutService.java",
+              "RelativeDocumentMoniker": "backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Service\\CheckoutService.java",
+              "ToolTip": "C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Service\\CheckoutService.java",
+              "RelativeToolTip": "backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Service\\CheckoutService.java",
+              "ViewState": "AgIAAHYAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001630|",
+              "WhenOpened": "2025-12-21T09:28:55.557Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ProductController.java",
+              "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Controller\\ProductController.java",
+              "RelativeDocumentMoniker": "backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Controller\\ProductController.java",
+              "ToolTip": "C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Controller\\ProductController.java",
+              "RelativeToolTip": "backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Controller\\ProductController.java",
+              "ViewState": "AgIAACUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001630|",
+              "WhenOpened": "2025-12-21T06:47:23.716Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "ProductDto.java",
+              "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Domain\\Dto\\ProductDto.java",
+              "RelativeDocumentMoniker": "backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Domain\\Dto\\ProductDto.java",
+              "ToolTip": "C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Domain\\Dto\\ProductDto.java",
+              "RelativeToolTip": "backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Domain\\Dto\\ProductDto.java",
+              "ViewState": "AgIAAEAAAAAAAAAAAABRwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001630|",
+              "WhenOpened": "2025-12-21T06:45:08.844Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CartPage.css",
+              "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\Cart\\CartPage.css",
+              "RelativeDocumentMoniker": "frontend\\src\\components\\Cart\\CartPage.css",
+              "ToolTip": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\Cart\\CartPage.css",
+              "RelativeToolTip": "frontend\\src\\components\\Cart\\CartPage.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-12-08T06:52:43.824Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "CartService.java",
+              "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Service\\CartService.java",
+              "RelativeDocumentMoniker": "backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Service\\CartService.java",
+              "ToolTip": "C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Service\\CartService.java",
+              "RelativeToolTip": "backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Service\\CartService.java",
+              "ViewState": "AgIAAGEAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001630|",
+              "WhenOpened": "2025-12-21T06:45:30.819Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CartPage.jsx",
+              "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\Cart\\CartPage.jsx",
+              "RelativeDocumentMoniker": "frontend\\src\\components\\Cart\\CartPage.jsx",
+              "ToolTip": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\Cart\\CartPage.jsx",
+              "RelativeToolTip": "frontend\\src\\components\\Cart\\CartPage.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJsAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-12-08T10:18:48.467Z",
+              "WhenOpened": "2025-12-08T06:52:36.634Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "api.js",
+              "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\services\\api.js",
+              "RelativeDocumentMoniker": "frontend\\src\\services\\api.js",
+              "ToolTip": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\services\\api.js",
+              "RelativeToolTip": "frontend\\src\\services\\api.js",
+              "ViewState": "AgIAAKIAAAAAAAAAAABRwKUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-12-08T06:58:26.399Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 21,
+              "Title": "SellerRoute.jsx",
+              "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\utils\\SellerRoute.jsx",
+              "RelativeDocumentMoniker": "frontend\\src\\utils\\SellerRoute.jsx",
+              "ToolTip": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\utils\\SellerRoute.jsx",
+              "RelativeToolTip": "frontend\\src\\utils\\SellerRoute.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-12-21T05:14:30.741Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
               "Title": "config.js",
               "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\config.js",
               "RelativeDocumentMoniker": "frontend\\src\\config.js",
@@ -253,12 +817,11 @@
               "RelativeToolTip": "frontend\\src\\config.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAABeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-12-21T05:05:50.503Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-21T05:05:50.503Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 23,
               "Title": "ViewProductRoute.jsx",
               "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\utils\\ViewProductRoute.jsx",
               "RelativeDocumentMoniker": "frontend\\src\\utils\\ViewProductRoute.jsx",
@@ -266,12 +829,11 @@
               "RelativeToolTip": "frontend\\src\\utils\\ViewProductRoute.jsx",
               "ViewState": "AgIAAAgAAAAAAAAAAAAewJgAAADpAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-12-08T10:30:37.516Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-08T10:30:37.516Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 24,
               "Title": "OrdersPage.css",
               "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\Orders\\OrdersPage.css",
               "RelativeDocumentMoniker": "frontend\\src\\components\\Orders\\OrdersPage.css",
@@ -283,43 +845,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 25,
               "Title": "OrdersPage.jsx",
               "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\Orders\\OrdersPage.jsx",
               "RelativeDocumentMoniker": "frontend\\src\\components\\Orders\\OrdersPage.jsx",
               "ToolTip": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\Orders\\OrdersPage.jsx",
               "RelativeToolTip": "frontend\\src\\components\\Orders\\OrdersPage.jsx",
-              "ViewState": "AgIAAGMAAAAAAAAAAAD4v3kAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAHoAAAAAAAAAAIBJwHwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-12-08T06:53:38.166Z"
+              "WhenOpened": "2025-12-08T06:53:38.166Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "CheckoutPage.jsx",
-              "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\Checkout\\CheckoutPage.jsx",
-              "RelativeDocumentMoniker": "frontend\\src\\components\\Checkout\\CheckoutPage.jsx",
-              "ToolTip": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\Checkout\\CheckoutPage.jsx",
-              "RelativeToolTip": "frontend\\src\\components\\Checkout\\CheckoutPage.jsx",
-              "ViewState": "AgIAAHQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-12-08T06:53:57.323Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "CartPage.css",
-              "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\Cart\\CartPage.css",
-              "RelativeDocumentMoniker": "frontend\\src\\components\\Cart\\CartPage.css",
-              "ToolTip": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\Cart\\CartPage.css",
-              "RelativeToolTip": "frontend\\src\\components\\Cart\\CartPage.css",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-12-08T06:52:43.824Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 26,
               "Title": "ProfileView.css",
               "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\UserProfile\\ProfileView.css",
               "RelativeDocumentMoniker": "frontend\\src\\components\\UserProfile\\ProfileView.css",
@@ -331,7 +870,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 27,
               "Title": "ProfileView.jsx",
               "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\UserProfile\\ProfileView.jsx",
               "RelativeDocumentMoniker": "frontend\\src\\components\\UserProfile\\ProfileView.jsx",
@@ -343,19 +882,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 41,
               "Title": "WishlistService.java",
               "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Service\\WishlistService.java",
               "RelativeDocumentMoniker": "backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Service\\WishlistService.java",
               "ToolTip": "C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Service\\WishlistService.java",
               "RelativeToolTip": "backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Service\\WishlistService.java",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAKAAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001630|",
               "WhenOpened": "2025-12-08T14:00:39.621Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 42,
               "Title": "ProfileView.css",
               "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\UserProfile\\ProfileView.css",
               "RelativeDocumentMoniker": "frontend\\src\\components\\UserProfile\\ProfileView.css",
@@ -366,7 +905,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 28,
               "Title": "AddressPage.jsx",
               "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\Address\\AddressPage.jsx",
               "RelativeDocumentMoniker": "frontend\\src\\components\\Address\\AddressPage.jsx",
@@ -378,7 +917,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 40,
               "Title": "ViewProductRoute.css",
               "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\utils\\ViewProductRoute.css",
               "RelativeDocumentMoniker": "frontend\\src\\utils\\ViewProductRoute.css",
@@ -389,7 +928,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 37,
               "Title": "UserDashboard.css",
               "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\Dashboard\\UserDashboard.css",
               "RelativeDocumentMoniker": "frontend\\src\\components\\Dashboard\\UserDashboard.css",
@@ -401,7 +940,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 38,
               "Title": "UserDashboard.css",
               "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\Dashboard\\UserDashboard.css",
               "RelativeDocumentMoniker": "frontend\\src\\components\\Dashboard\\UserDashboard.css",
@@ -412,7 +951,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 39,
               "Title": "ViewProductRoute.css",
               "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\utils\\ViewProductRoute.css",
               "RelativeDocumentMoniker": "frontend\\src\\utils\\ViewProductRoute.css",
@@ -424,7 +963,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 30,
               "Title": "JwtAccessFilter.java",
               "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Configuration\\JwtAccessFilter.java",
               "RelativeDocumentMoniker": "backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Configuration\\JwtAccessFilter.java",
@@ -436,7 +975,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 29,
               "Title": "CorsConfig.java",
               "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Configuration\\CorsConfig.java",
               "RelativeDocumentMoniker": "backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Configuration\\CorsConfig.java",
@@ -448,7 +987,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 31,
               "Title": "User.java",
               "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Repo\\User.java",
               "RelativeDocumentMoniker": "backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Repo\\User.java",
@@ -460,7 +999,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 36,
               "Title": "SecurityConfig.java",
               "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Configuration\\SecurityConfig.java",
               "RelativeDocumentMoniker": "backend\\onlinetestbackendservice\\src\\main\\java\\com\\example\\onlinetest\\Configuration\\SecurityConfig.java",
@@ -472,7 +1011,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 35,
               "Title": "CategoryPage.jsx",
               "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\pages\\CategoryPage.jsx",
               "RelativeDocumentMoniker": "frontend\\src\\pages\\CategoryPage.jsx",
@@ -484,19 +1023,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 32,
               "Title": "App.js",
               "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\App.js",
               "RelativeDocumentMoniker": "frontend\\src\\App.js",
               "ToolTip": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\App.js",
               "RelativeToolTip": "frontend\\src\\App.js",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAIkAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-12-08T06:49:46.383Z"
+              "WhenOpened": "2025-12-08T06:49:46.383Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 34,
               "Title": "CheckoutPage.css",
               "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\Checkout\\CheckoutPage.css",
               "RelativeDocumentMoniker": "frontend\\src\\components\\Checkout\\CheckoutPage.css",
@@ -508,7 +1048,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 33,
               "Title": "AddressPage.css",
               "DocumentMoniker": "C:\\Users\\smaddirala\\onlinetestapp\\frontend\\src\\components\\Address\\AddressPage.css",
               "RelativeDocumentMoniker": "frontend\\src\\components\\Address\\AddressPage.css",

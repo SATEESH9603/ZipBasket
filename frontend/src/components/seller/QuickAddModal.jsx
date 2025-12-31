@@ -1,6 +1,7 @@
 // QuickAddModal.jsx
 import React, { useEffect, useMemo, useState } from "react";
 import { CURRENCY_OPTIONS, CATEGORY_OPTIONS } from "./constants";
+import { toast } from "react-toastify";
 import "../seller/QuickAddModal.css";
 
 export default function QuickAddModal({
@@ -107,13 +108,13 @@ export default function QuickAddModal({
     // Keep your original validations for create;
     // in edit, we only validate fields that remain editable to avoid blocking partial updates.
     if (mode !== "edit" || isEditable("name")) {
-      if (!form.name?.trim()) return alert("Please enter product name");
+      if (!form.name?.trim()) return toast.error("Please enter product name");
     }
     if (mode !== "edit" || isEditable("price")) {
-      if (!form.price || isNaN(Number(form.price))) return alert("Enter a valid price");
+      if (!form.price || isNaN(Number(form.price))) return toast.error("Enter a valid price");
     }
     if (mode !== "edit" || isEditable("sku")) {
-      if (!form.sku?.trim()) return alert("Please enter SKU");
+      if (!form.sku?.trim()) return toast.error("Please enter SKU");
     }
 
     const payload = {
@@ -134,14 +135,14 @@ export default function QuickAddModal({
 
       // 🔔 Preserve old alert for create; use a different one for edit (only when mode provided)
       if (mode === "edit") {
-        alert("Product updated!");
+        toast.success("Product updated");
       } else {
-        alert("Product created (draft)!");
+        toast.success("Product created (draft)!");
       }
 
       onClose?.();
     } catch (err) {
-      alert(err?.message || (mode === "edit" ? "Failed to update product" : "Failed to create product"));
+      toast.error(err?.message || (mode === "edit" ? "Failed to update product" : "Failed to create product"));
     } finally {
       setSubmitting(false);
     }

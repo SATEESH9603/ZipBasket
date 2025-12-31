@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useCallback } from "react";
+import { useNavigate } from "react-router-dom";
 import "./OrdersPage.css";
 import { getOrders, cancelOrder, returnOrder } from "../../services/api";
 import { toast } from "react-toastify";
@@ -6,6 +7,7 @@ import { toast } from "react-toastify";
 const inr = new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR' });
 
 export default function OrdersPage({ username, token }) {
+  const navigate = useNavigate();
   const [orders, setOrders] = useState([]);
   const [loading, setLoading] = useState(true);
   const [err, setErr] = useState("");
@@ -104,6 +106,7 @@ export default function OrdersPage({ username, token }) {
               <div className="order-right">
                 <div className="order-total">{inr.format(Number(o.total || 0))}</div>
                 <div className="order-actions">
+                  <button className="btn btn-primary" onClick={() => navigate(`/orders/${o.id}`)}>View Details</button>
                   {String(o.status).toUpperCase() === 'PLACED' && (
                     <>
                       <button className="btn btn-outline" onClick={() => onCancel(o.id)}>Cancel</button>

@@ -47,11 +47,12 @@ export const resetPassword = async (token, data, type = 'JWT') => {
 };
 
 // ---- Products ----
-export const getProducts = async ({ page = 1, category, q, token } = {}) => {
+export const getProducts = async ({ page = 1, category, q, token, filter = 'IN_STOCK' } = {}) => {
   const params = new URLSearchParams();
   params.set('page', page);
   if (category) params.set('category', category);
   if (q) params.set('q', q);
+  if (filter) params.set('filter', filter);
   const res = await API.get(`/products?${params.toString()}` , {
     headers: token ? { Authorization: `Bearer ${token}` } : undefined,
   });
@@ -101,15 +102,11 @@ export const updateProduct = (id, data, token) =>
 
 export const viewCart = (username, token) =>
   API.get(`/cart/view/${username}`, { headers: { Authorization: `Bearer ${token}` } });
-
 export const updateCartItems = (username, items, token) =>
   API.patch(`/cart/update/${username}`, { items }, { headers: { Authorization: `Bearer ${token}` } });
-// Merge the new product into the existing cart items and preserve others
 export const addToCart = async (username, productId, quantity = 1, token) => {
   const res = await viewCart(username, token);
   const list = Array.isArray(res?.data?.items) ? res.data.items : Array.isArray(res?.items) ? res.items : [];
-
-  // Build a productId -> qty map, then merge incoming
   const map = new Map();
   for (const it of list) {
     const pid = it?.productId ?? it?.id ?? it?.product?.id;
@@ -117,7 +114,6 @@ export const addToCart = async (username, productId, quantity = 1, token) => {
     if (pid != null) map.set(pid, (map.get(pid) || 0) + qty);
   }
   map.set(productId, (map.get(productId) || 0) + Number(quantity));
-
   const payload = Array.from(map.entries()).map(([pid, qty]) => ({ productId: pid, quantity: qty }));
   return updateCartItems(username, payload, token);
 };
@@ -145,20 +141,25 @@ export const addAddress = (username, payload, token) =>
 export const deleteAddress = (username, addressId, token) =>
   API.delete(`/user/address/${username}/${addressId}`, { headers: { Authorization: `Bearer ${token}` } });
 
-// Checkout requires shippingAddressId, billingAddressId, shippingMethod, and backend expects userName (camel case)
 export const checkout = (username, addressId, token, shippingMethod = 'STANDARD') =>
   API.post('/checkout', {
     userName: username,
     shippingAddressId: addressId,
-    billingAddressId: addressId, // using same address for billing by default
+    billingAddressId: addressId,
     shippingMethod,
   }, { headers: { Authorization: `Bearer ${token}` } });
-
 export const getOrders = (username, token) =>
   API.get(`/orders/${username}`, { headers: { Authorization: `Bearer ${token}` } });
-export const cancelOrder = (username, orderId, token) =>
-  API.patch(`/orders/${username}/${orderId}/cancel`, {}, { headers: { Authorization: `Bearer ${token}` } });
-export const returnOrder = (username, orderId, token) =>
-  API.patch(`/orders/${username}/${orderId}/return`, {}, { headers: { Authorization: `Bearer ${token}` } });
+export const getOrderDetail = (username, orderId, token) => API.get(`/orders/${username}/${orderId}`, { headers: { Authorization: `Bearer ${token}` } });
+export const cancelOrder = (username, orderId, token) => API.patch(`/orders/${username}/${orderId}/cancel`, {}, { headers: { Authorization: `Bearer ${token}` } });
+export const returnOrder = (username, orderId, token) => API.patch(`/orders/${username}/${orderId}/return`, {}, { headers: { Authorization: `Bearer ${token}` } });
+
+export const getOrdersBySeller = (sellerId, token, page, size) => {
+  const params = new URLSearchParams();
+  if (page) params.set('page', page);
+  if (size) params.set('size', size);
+  return API.get(`/orders/seller/${sellerId}?${params.toString()}`, { headers: { Authorization: `Bearer ${token}` } });
+};
+export const getOrderDetailsBySeller = (sellerId, token) => API.get(`/orders/seller/${sellerId}/details`, { headers: { Authorization: `Bearer ${token}` } });
 
 export default API;

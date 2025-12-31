@@ -185,16 +185,37 @@
 
 /* Pills (statuses) */
 .pill {
-  padding: .35rem .6rem; border-radius: 999px; color: #fff; font-weight: 800; text-align: center;
-  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 600;
 }
-.pill--active { background: #2f7a3e; }
-.pill--inactive, .pill--draft { background: #8a1c1c; }
-.pill--pending { background: #bd294e; }
-.pill--processing { background: #b91c1c; }
-.pill--shipped { background: #7b1e36; }
-.pill--delivered { background: #2f7a3e; }
-.pill--cancelled { background: #8a1c1c; }
+
+/* Unified variants for order status */
+.pill--info {
+  background: #e0f2fe; /* light sky */
+  color: #0369a1;      /* sky-700 */
+}
+.pill--warn {
+  background: #fee2e2; /* rose-100 */
+  color: #b91c1c;      /* red-700 */
+}
+.pill--neutral {
+  background: #f3f4f6; /* gray-100 */
+  color: #374151;      /* gray-700 */
+}
+.pill--default {
+  background: #eeeeee;
+  color: #555555;
+}
+
+/* Table adjustments to align pills nicely */
+.table .trow > div:nth-child(3) {
+  display: flex;
+  align-items: center;
+}
 
 /* Payouts */
 .payout .payout-body {
